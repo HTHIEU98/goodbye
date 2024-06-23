@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/HTHIEU98/goodbye.git'
+                git branch: 'main', url: 'https://github.com/HTHIEU98/goodbye.git'
             }
         }
     }
